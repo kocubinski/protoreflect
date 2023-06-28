@@ -2061,7 +2061,7 @@ func quotedString(s string) string {
 		case '\t':
 			b.WriteString("\\t")
 		case '"':
-			b.WriteString("\"")
+			b.WriteString("\\\"")
 		case '\\':
 			b.WriteString("\\\\")
 		default:

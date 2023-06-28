@@ -277,5 +277,5 @@ func TestQuoteString(t *testing.T) {
 	s = quotedString("\U0010FFFF")
 	testutil.Eq(t, "\"\\U0010FFFF\"", s)
 	s = quotedString("yaml:\"foobar\"")
-	testutil.Eq(t, "\"yaml:\"foobar\"\"", s)
+	testutil.Eq(t, "\"yaml:\\\"foobar\\\"\"", s)
 }
